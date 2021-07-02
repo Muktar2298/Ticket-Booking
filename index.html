@@ -31,7 +31,9 @@
 
         <div class="booking-content">
             <h1>Mega City Bus</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
         </div>
 
 
@@ -41,18 +43,18 @@
             <div class="inputs">
                 <div class="input-group">
                     <label" for="">From</label>
-                    <input class="inp-style" type="text" name="" placeholder="Dhaka">
+                        <input class="inp-style" type="text" name="" placeholder="Dhaka">
                 </div>
                 <div class="input-group">
                     <label" for="">From</label>
-                    <input class="inp-style" type="text" name="" placeholder="Chittagone">
+                        <input class="inp-style" type="text" name="" placeholder="Chittagone">
                 </div>
             </div>
 
             <div class="inputs">
                 <div class="input-group">
                     <label" for="">Departure</label>
-                    <input class="inp-style" type="date" name="">
+                        <input class="inp-style" type="date" name="">
                 </div>
                 <div class="input-group">
                     <label for="">Return</label>
@@ -60,33 +62,48 @@
                 </div>
             </div>
             <div class="inputs">
+                <!-- First Class Ticket -->
                 <div class="input-group f-class">
-                <div>
-                    <label for="">First Class ($150)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <div>
+                        <label for="">First Class ($150)</label>
+                        <!--  Ticket Price -->
+                        <h3 id="first-price">$ 000</h3>
+                        <!--  Ticket Quantity -->
+                        <input id="first-quantity" class="inp-style inp-width" type="number" name="" value="0">
+                    </div>
+                    <!-- Plus Minus Btn -->
+                    <div class="plus-minus-btn">
+                        <button class="btn" onclick="ticketClass('first',true)">+</button>
+                        <button class="btn" onclick="ticketClass('first',false)">-</button>
+                    </div>
                 </div>
-                <div class="plus-minus-btn">
-                    <p>+ -</p>
-                </div>
-            </div>
+
+                <!-- Economy Class Ticket -->
                 <div class="input-group f-class">
                     <div>
                         <label for="">Economy ($100)</label>
-                        <input class="inp-style inp-width" type="number" name="">
+                        <!-- Economy Class Ticket Price -->
+                        <h3 id="economy-price">$ 000</h3>
+                        <!-- Economy Class Ticket Quantity -->
+                        <input id="economy-quantity" class="inp-style inp-width" type="number" name="" value="0">
                     </div>
+                    <!-- Plus Minus Btn -->
                     <div class="plus-minus-btn">
-                        <p> <span>+</span> <span>-</span> </p>
+                        <button class="btn" onclick="ticketClass('economy',true)">+</button>
+                        <button class="btn" onclick="ticketClass('economy',false)">-</button>
                     </div>
                 </div>
 
             </div>
+            <!-- Calculations -->
             <div class="calculations">
                 <div class="amount">
                     <div class="left">
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$500</p>
+                        <!-- Subtotal -->
+                        <p id="subtotal">$ 000</p>
                     </div>
                 </div>
 
@@ -95,7 +112,8 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$50</p>
+                        <!-- Tax -->
+                        <p id="tax">$ 00</p>
                     </div>
                 </div>
                 <hr>
@@ -104,7 +122,8 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$550</p>
+                        <!-- Total -->
+                        <p id="total">$ 000</p>
                     </div>
                 </div>
             </div>
@@ -113,6 +132,9 @@
     </main>
 
     <!--Thank You-->
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
