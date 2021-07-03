@@ -142,14 +142,14 @@ a.active {
 }
 
 /* --ticket booking details-- */
-#ticket-booking-details{
+#ticket-booking-details {
   display: none;
-  background-color:#f8f6f6b6;
+  background-color: #f8f6f6b6;
   width: 80%;
-  position:relative;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 10%;;
+  margin-top: 10%;
 }
 table {
   font-family: arial, sans-serif;
@@ -185,21 +185,47 @@ th {
 }
 
 .ticket-booking-details div button {
-  width:50%;
-  cursor:pointer;
+  width: 50%;
+  cursor: pointer;
   border: none;
   color: black;
   font-size: 20px;
   padding: 10px;
 }
-#confirm-btn{
-  background:#dbb4b4;
+#confirm-btn {
+  background: #dbb4b4;
 }
-#cancle-btn{
-  background:#300430;
+#cancle-btn {
+  background: #300430;
   color: white;
 }
-.ticket-booking-details div button:hover{
-  background:black !important;
+.ticket-booking-details div button:hover {
+  background: black !important;
   color: white;
+}
+
+/* -confirm Booking-- */
+#confirm-booking {
+  margin-top: 5%;
+  display: none;
+  width: 25%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.808);
+  padding: 30px;
+  border-radius: 2%;
+}
+#confirm-booking h3 {
+  text-align: center;
+  color: #413e3e;
+  margin-bottom: 30px;
+}
+#confirm-booking img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 2%;
 }

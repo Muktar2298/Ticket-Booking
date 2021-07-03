@@ -65,6 +65,8 @@ function getQuntity(ticket) {
   return ticketQuantity;
 }
 
+//-------Extra Functionnility --------//
+
 // // ---For Booking Details ----//
 document.getElementById("book-now").addEventListener("click", function () {
   const booking = document.getElementById("booking");
@@ -72,4 +74,22 @@ document.getElementById("book-now").addEventListener("click", function () {
 
   const bookingDetails = document.getElementById("ticket-booking-details");
   bookingDetails.style.display = "block";
+});
+
+// ---Confirm Booking Btn --//
+document.getElementById("confirm-btn").addEventListener("click", function () {
+  const bookingDetails = document.getElementById("ticket-booking-details");
+  bookingDetails.style.display = "none";
+
+  const confimrBooking = document.getElementById("confirm-booking");
+  confimrBooking.style.display = "block";
+});
+
+// ---Cancle Booking Btn ---//
+document.getElementById("cancle-btn").addEventListener("click", function () {
+  const bookingDetails = document.getElementById("ticket-booking-details");
+  bookingDetails.style.display = "none";
+
+  // --Move to Home Page --//
+  window.location.replace("index.html");
 });
