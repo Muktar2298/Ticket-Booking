@@ -27,7 +27,7 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <main class="main-content container" id="booking">
 
         <div class="booking-content">
             <h1>Mega City Bus</h1>
@@ -127,11 +127,50 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button class="btn-style" id="book-now">Book Now</button>
         </div>
     </main>
 
-    <!--Thank You-->
+
+    <!-- Ticket Booking Details -->
+    <section class="ticket-booking-details" id="ticket-booking-details">
+        <h1 style="text-align:center;color:#241d1d;font-size: 50px; margin:20px 20px;">Booking Details</h1>
+    
+        <!-- Ticket Details -->
+        <table>
+            <tr style="font-size: larger;color:#423d3de8; background:white">
+                <th>TICKET CLASS</th>
+                <th>TICKET QUANTITY</th>
+                <th>TICKET PRICE</th>
+            </tr>
+            <tr>
+                <td>First Class</td>
+                <td id="first-class-quantity">0</td>
+                <td id="first-class-price">$000</td>
+            </tr>
+            <tr>
+                <td>Economy Class </td>
+                <td id="economy-class-quantity">0</td>
+                <td id="economy-class-price">$000</td>
+            </tr>
+            <tr>
+                <th>TAX</th>
+                <th>Charge 10% VAT</th>
+                <th id="booking-tax">$000</th>
+            </tr>
+            <tr style=" border-bottom:none;font-size: larger;color:white; background:black">
+                <th>TOTAL </th>
+                <th></th>
+                <th id="booking-total">$000</th>
+            </tr>
+        </table>
+
+        <div>
+            <button id="confirm-btn">Confirm Booking</button>
+            <button id="cancle-btn">Cancle Booking</button>
+        </div>
+
+    </section>
 
 
     <script src="script.js"></script>

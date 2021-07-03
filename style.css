@@ -39,6 +39,10 @@ a.active {
   background-color: #52af3a;
   border-radius: 5px;
 }
+
+#booking {
+  /* display: none; */
+}
 .main-content {
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -122,6 +126,7 @@ a.active {
   cursor: pointer;
 }
 .btn-style {
+  cursor: pointer;
   display: block;
   width: 100%;
   padding: 10px;
@@ -134,4 +139,67 @@ a.active {
 .amount {
   display: flex;
   justify-content: space-between;
+}
+
+/* --ticket booking details-- */
+#ticket-booking-details{
+  display: none;
+  background-color:#f8f6f6b6;
+  width: 80%;
+  position:relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10%;;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  margin-top: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+td {
+  font-weight: bold;
+}
+th {
+  border-bottom: 1px solid black;
+}
+td,
+th {
+  /* border:1px solid #dddddd; */
+  text-align: center;
+  padding: 10px;
+}
+
+.ticket-booking-details div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 70%;
+  background: #52af3a;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ticket-booking-details div button {
+  width:50%;
+  cursor:pointer;
+  border: none;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+}
+#confirm-btn{
+  background:#dbb4b4;
+}
+#cancle-btn{
+  background:#300430;
+  color: white;
+}
+.ticket-booking-details div button:hover{
+  background:black !important;
+  color: white;
 }

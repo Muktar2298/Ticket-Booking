@@ -12,6 +12,12 @@ function ticketClass(ticket, isIncreseQuantity) {
   }
   document.getElementById(ticket + "-quantity").value = ticketUpdateQuantity;
 
+  // // --For Booking Details --//
+  document.getElementById(ticket + "-class" + "-quantity").innerText =
+    ticketUpdateQuantity;
+  document.getElementById(ticket + "-class" + "-quantity").innerText =
+    ticketUpdateQuantity;
+
   //---Ticket Price ---//
   let ticketTotalPrice = ticketUpdateQuantity;
   if (ticket == "first") {
@@ -22,6 +28,12 @@ function ticketClass(ticket, isIncreseQuantity) {
   }
   document.getElementById(ticket + "-price").innerText =
     "$ " + ticketTotalPrice;
+
+  // --booking details --//
+  document.getElementById(ticket + "-class" + "-price").innerText =
+    ticketTotalPrice;
+  document.getElementById(ticket + "-class" + "-price").innerText =
+    ticketTotalPrice;
 
   ticketPriceCalculation();
 }
@@ -40,6 +52,10 @@ function ticketPriceCalculation() {
   //--total --//
   const total = subtotal + tax;
   document.getElementById("total").innerText = "$ " + total;
+
+  // --booking details tax --//
+  document.getElementById("booking-tax").innerText = "$" + tax;
+  document.getElementById("booking-total").innerText = "$" + total;
 }
 
 // --getQuntity --//
@@ -48,3 +64,12 @@ function getQuntity(ticket) {
   const ticketQuantity = parseInt(ticketInput);
   return ticketQuantity;
 }
+
+// // ---For Booking Details ----//
+document.getElementById("book-now").addEventListener("click", function () {
+  const booking = document.getElementById("booking");
+  booking.style.display = "none";
+
+  const bookingDetails = document.getElementById("ticket-booking-details");
+  bookingDetails.style.display = "block";
+});
